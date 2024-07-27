@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaroha(MANIT)</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.text{
+    display: flex;
+    justify-content:space-between;
+}
+.socialmedia img{
+    padding:0px 2px;
+}
+.separation{
+    background-color: white;
+    width:100%;
+    height:1.7px;
+}
+.nav1{
+    background-color:rgba(17, 143, 192, 0.982);
+    width: 100%;
+    height:40px;
+    position: sticky;
+    
+}
+.nav2{
+    background-color:rgb(53, 52, 52) ;        
+    width: 100%;
+    height:95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    padding: 0px 15px;
+
+}
+.aaroha{
+    padding-bottom: 2px;
+}
+.aarohalogo{
+    padding-left: 2px;
+}
+a{
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.first img{
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('https://www.aaroha.org.in/img/single2.jpg');
+    width:100%;
+    height:590px;
+    background-size: 100% 100%;
+}
+.nav{
+   
+    position: sticky;
+}
+.second div{
+    background-color:rgba(17, 143, 192, 0.982);
+    width: 100%;
+    height:100px;
+    
+}
+.heading{
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    padding:120px 10px  20px 20px;
+    font-weight: 700;
+    text-shadow: 2.5px 2.5px black;
+}
+
+.h-text{
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 2px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn1{
+   padding:20px 23px;
+   margin-top:0px;
+   margin-bottom: 40px;
+   background-color: rgb(253, 170, 16);
+   color:black;
+   font-weight: 700;
+   font-size: 21px;
+   border-radius: 8px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+.two{
+    padding:10px 20px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color:rgba(2, 75, 103, 0.982);
+    margin-bottom: 25px;
+}
+.goal{
+    color:rgb(4, 118, 163);             /*rgba(17, 143, 192, 0.982)*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    max-width: 50vw;
+    margin: auto;
+    font-weight: 750;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    background-color:  rgb(253, 170, 16);
+    position :relative;
+    width:1200px;
+    padding:30px;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+.card{
+    width:308px;
+    height:400px;
+    position:relative;
+    background-color: #f0f0f0;
+    margin:30px 10px;
+    align-items: center;
+    padding:20px 15px;
+    flex-direction: column;
+    box-shadow: 0.5px 10px #e6e6e6;
+    transition:0.3s ease-in-out;
+    margin-top: 3%;
+    border-radius: 8px;
+    border: 0.5px solid black;
+}
+.container .card .imgBx img{
+    position: relative;
+    border-radius: 10px;
+    max-height: 100%;
+    
+}
+.card:hover{
+    transform:scale(1.1);
+}
+.imgBx h2{
+    color: rgba(17, 143, 192, 0.982);
+    margin-top: 8px;
+}
+.volunteer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.bigbox{
+    background-color:rgba(17, 143, 192, 0.982);
+    width: 80%;
+    border-radius: 8px;
+    margin: auto;
+    height: 500px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding:2vw 4vw;
+    width:90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3{
+    color:black;
+    text-shadow:1px 1px rgb(253, 170, 16) ;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input,form textarea{
+    border:0;
+    border-radius: 11px;
+    margin:10px 0;
+    padding:12px;
+    outline:none;
+    background-color: #e5e5e5;
+    font-size: 16px;
+}
+form button{
+    padding:15px;
+    margin:10px;
+    background-color: rgb(253, 170, 16) ;
+    color:black;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width:150px;
+    margin:20px auto 0;
+    border-radius: 30px;
+}
+@media only screen and (max-width:1199px)
+{
+    .container{
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading{
+        font-size: 40px;
+    }
+    .aarohalogo{
+        width: 55px;
+    }
+    .aaroha{
+        width: 160px;
+    }
+
+}
+@media only screen and (max-width:648px)
+{
+    .h-text{
+        font-size: 25px;
+    }
+    .volunteer{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media only screen and (max-width:648px)
+{
+    .h-text{
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 35px;
+    }
+
+}
+@media only screen and(max-width:1130) {
+    .aarohalogo{
+        width: 25px;
+    }
+    .aaroha{
+        width: 80px;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <nav class="nav1">
+                <div class="text">
+                    <i class="fa fa-envelope">
+                        <img src="https://th.bing.com/th/id/OIP.4Mrz8Ls6-l434jZCmTcbQgHaFe?rs=1&pid=ImgDetMain"
+                            width="54px">
+                    </i>
+                    <div class="socialmedia">
+                        <img src="https://th.bing.com/th/id/R.27d542e2e2626de4c08ee3d84aaabb7b?rik=1rF1Vy85L8YlvA&riu=http%3a%2f%2fwww.d1spas.fr%2fwp-content%2fuploads%2f2015%2f11%2ffacebook-logo-black-and-white-png-4.png&ehk=36VbgUuGtA5dW0PK4kcuD4S9xM8NvqKYQYvc%2fUT0LQU%3d&risl=&pid=ImgRaw&r=0"
+                            width="47px" height="40px">
+                        <img src="https://th.bing.com/th/id/OIP.izi6jOWjMSD1MMYDdQh50AHaHb?w=1196&h=1200&rs=1&pid=ImgDetMain"
+                            width="47px" height="40px">
+
+                    </div>
+                </div>
+            </nav>
+            <div class="separation"></div>
+            <nav class="nav2">
+                <div class="logo">
+                    <img class="aarohalogo" src="https://www.aaroha.org.in/images/aarohalogofin.png" width="68.5px">
+                    <img class="aaroha" src="https://www.aaroha.org.in/img/logotext.png" width="185px">
+                </div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">What we do</a>
+                    <a href="#">Events</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Team</a>
+                    <a href="#">Donate</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+        </nav>
+        <div class="separation"></div>
+    </header>
+
+
+    <main>
+        <section class="first">
+            <img src="https://www.aaroha.org.in/img/single2.jpg">
+        </section>
+
+        <div class="separation"></div>
+
+        <div class="second">
+            <div class="heading">Bringing Smiles To Thousands</div>
+            <div class="h-text">Let's Be Kind To Children And Get Involved In Helping Hand</div>
+            <div class="btn">
+                <button class="btn1">Donate Now</button>
+                <button class="btn1">Watch Video</button>
+            </div>
+        </div>
+
+        <div class="separation"></div>
+
+        <section>
+            <div class="two">What we do ?</div>
+            <span class="goal">We Believe In Saving More Lives With You</span>
+        </section>
+        <div class="separation"></div>
+        <div class="separation"></div>
+        <section>
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <a href="#">
+                            <img src="https://aaroha.org.in/img/event-1.jpg" width="277px">
+                        </a>
+                        <h2>PROJECT <b>AKSHAR</b></h2>
+                        <p><br>Project Akshar was started in 2015 & works with the motive of enabling a brighter future
+                            for underpriviledged children.Regular learning session from Monday to Friday covering
+                            various subjects.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgBx">
+                        <a href="#">
+                            <img src="https://www.aaroha.org.in/img/single1.jpg" width="275px">
+                        </a>
+                        <h2>PROJECT <b>ANAND </b></h2>
+                        <p><br>Frequent fun and learning trips, visits and participations in various science
+                            exhibitions. Some of the prominent yearly programs introduced under Project Aanand are:<b>Aa
+                                Se Aha, Aasha,Aavishkar </b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgBx">
+                        <a href="#">
+                            <img src="https://www.indiafoodbanking.org/wp-content/uploads/2023/01/WhatsApp-Image-2022-05-25-at-12.33.21-PM-1.jpeg"
+                                height="180px" width="270px">
+                        </a>
+                        <h2>PROJECT <b>AAHAR</b></h2>
+                        <p><br> Under the <b>FEED INDIA </b>vertical,it provides nutritious meals to the needy ones.This
+                            good quality food is prepared by the students from the institute of Hotel Management, Bhopal
+                            & aims to feed fifty people every week.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="separation"></div>
+    <div class="volunteer">
+        <b>TO BECOME A VOLUNTEER, REGISTER BELOW</b>
+    </div>
+    <footer>
+        <div class="bigbox">
+            <form action="">
+                <h3>REGISTER HERE</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Enter Email id" required>
+                <input type="text" id="phone" placeholder="Enter Phone No." required>
+                <textarea id="message" rows="4" placeholder="Why you want to become Volunteer?"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>
